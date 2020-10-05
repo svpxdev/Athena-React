@@ -2,6 +2,7 @@ import React, { useReducer, useState } from "react";
 import "./styles.css";
 import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom";
 import Header from "./components/Header";
+import Home from "./components/Home";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         </Route>
         <Route path="/">
           <Header />
+          <Home />
           <div className="App">
             <h1>This is Home</h1>
           </div>
