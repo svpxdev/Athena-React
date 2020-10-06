@@ -1,12 +1,28 @@
 #heroSection {
 }
 
+body {
+  background-color: #ececec;
+}
+
 .home__heroSection {
-  background-image: url("https://images.pexels.com/photos/4256852/pexels-photo-4256852.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
-  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-  height: 450px;
+  background-image: url("https://images.pexels.com/photos/4256852/pexels-photo-4256852.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"),
+    linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  display: flex;
+  flex-direction: column;
+  /* background-image: linear-gradient(to bottom, #0277bd, rgba(0, 0, 0, 0)); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
   display: flex;
   align-items: center;
+}
+
+.home__logo {
+  color: #fff;
+  font-size: 50px;
 }
 
 .home__heroSection > h1 {

@@ -3,6 +3,7 @@ import "./styles.css";
 import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./components/Home";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -26,9 +27,7 @@ function App() {
         <Route path="/">
           <Header />
           <Home />
-          <div className="App">
-            <h1>This is Home</h1>
-          </div>
+          <Footer />
         </Route>
       </Switch>
     </Router>

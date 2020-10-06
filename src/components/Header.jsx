@@ -32,7 +32,7 @@ function Header() {
         </div>
         <div className="header__basket">
           <ShoppingCartIcon className="header__basketOption" />
-          <span>0</span>
+          <span className="header__basketItems">0</span>
         </div>
       </div>
     </div>
