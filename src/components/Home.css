@@ -14,3 +14,11 @@
   font-size: 50px;
   margin: auto;
 }
+
+.home__products {
+  display: flex;
+  margin: 50px 3% 30px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}

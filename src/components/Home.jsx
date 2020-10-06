@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import Product from "./Product";
+import bookList from "../Books";
 
 function Home() {
   return (
@@ -10,7 +11,20 @@ function Home() {
           <h1>Welcome to the bookstore </h1>
         </div>
       </section>
-      <Product />
+
+      <div className="home__products">
+        {bookList.map((product) => {
+          return (
+            <Product
+              key={product.id}
+              title={product.title}
+              price={product.price}
+              rating={product.rating}
+              image={product.image}
+            />
+          );
+        })}
+      </div>
     </>
   );
 }
