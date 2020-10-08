@@ -1,8 +1,7 @@
-#heroSection {
-}
-
 body {
-  background-color: #ececec;
+  min-height: 100% !important;
+  height: 100vh;
+  margin: 0px;
 }
 
 .home__heroSection {

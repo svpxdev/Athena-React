@@ -6,6 +6,8 @@
   background-color: #004d40;
   color: #fff;
   text-align: center;
+  position: relative;
+  bottom: 0;
 }
 
 .footer__text {
