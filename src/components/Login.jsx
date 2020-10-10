@@ -1,6 +1,7 @@
 import React from "react";
 import "./Login.css";
 import LocalLibraryIcon from "@material-ui/icons/LocalLibrary";
+import { Link } from "react-router-dom";
 
 function Login() {
   return (
@@ -20,7 +21,9 @@ function Login() {
             <input type="password" className="login__inputOptions" />
           </div>
           <div>
-            <button className="login__button"> Sign In </button>
+            <Link to="/">
+              <button className="login__button"> Sign In </button>
+            </Link>
             <p className="login__disclaimer">
               By registering, you agree to our general terms and conditions .{" "}
             </p>
@@ -29,7 +32,9 @@ function Login() {
         <div className="login__new">
           <hr className="login__divider" />
           <p className="login__signUp"> New to Athena? Sign Up! </p>
-          <button className="login__button"> Sign Up </button>
+          <Link to="/">
+            <button className="login__button"> Sign Up </button>{" "}
+          </Link>
         </div>
       </div>
       <div className="login__footer">

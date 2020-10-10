@@ -9,7 +9,7 @@ import Checkout from "./components/Checkout";
 
 function App() {
   return (
-    <body>
+    <>
       <Router>
         <Switch>
           <Route path="/login">
@@ -32,7 +32,7 @@ function App() {
           </Route>
         </Switch>
       </Router>
-    </body>
+    </>
   );
 }
 

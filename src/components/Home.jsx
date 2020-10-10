@@ -3,6 +3,8 @@ import "./Home.css";
 import Product from "./Product";
 import bookList from "../Books";
 import LocalLibraryIcon from "@material-ui/icons/LocalLibrary";
+import { useBasketState } from "../StateProvider";
+import Reducer from "../Reducer";
 
 function Home() {
   return (
@@ -14,10 +16,11 @@ function Home() {
       </section>
 
       <div className="home__products">
-        {bookList.map((product) => {
+        {bookList.map((product, i) => {
           return (
             <Product
-              key={product.id}
+              key={product.id.toString()}
+              id={product.id}
               title={product.title}
               price={product.price}
               rating={product.rating}

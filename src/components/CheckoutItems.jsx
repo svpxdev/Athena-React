@@ -2,8 +2,21 @@ import React from "react";
 import "./CheckoutItems.css";
 import ShoppingCartRoundedIcon from "@material-ui/icons/ShoppingCartRounded";
 import DeleteIcon from "@material-ui/icons/Delete";
+import { useBasketState } from "../StateProvider";
+import Reducer from "../Reducer";
 
 function CheckoutItems(props) {
+  const [{ basket }, dispatch] = useBasketState();
+
+  function removeItemfromBasket() {
+    dispatch({
+      type: "REMOVE_FROM_BASKET",
+      item: {
+        id: props.id
+      }
+    });
+  }
+
   return (
     <div className="checkout__card">
       <div className="checkout__info">
@@ -21,7 +34,7 @@ function CheckoutItems(props) {
             ))}
         </p>
         <div className="checkout__button">
-          <a href="/checkout">
+          <a onClick={removeItemfromBasket}>
             <DeleteIcon className="checkout__buttonOptions" />
           </a>
         </div>

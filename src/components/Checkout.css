@@ -13,10 +13,15 @@
   flex: 1;
   background-color: #ffffff;
   margin-top: 10px;
-  padding: 10px;
+  margin-right: 10px;
+  padding: 15px;
   border-radius: 10px;
   min-width: 250px;
   height: 200px;
+}
+
+.checkout__summaryBox:last-child {
+  margin-right: 0px;
 }
 
 .checkout__boxBorder {
@@ -33,7 +38,7 @@
 }
 
 .checkout__header {
-  padding-left: 20px;
+  padding-top: 20px;
   width: 100%;
   /* max-width: 1160px; */
   margin: auto;
@@ -49,9 +54,67 @@
   align-items: center;
 }
 
+.checkout__summaryHeader {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.checkout__summaryBody {
+  margin-bottom: 15px;
+}
+
+.checkout__link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #0089fa;
+}
+
+.checkout__link:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: #1d66a1;
+}
+
+.checkout__placeOrder {
+  line-height: 22px;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  margin-top: 20px;
+  padding: 6px;
+  border: 1px #000000 solid !important;
+  background-color: #ffd54f;
+  border-radius: 5px;
+}
+
+.checkout__placeOrder:hover {
+  background-color: #ffe58e;
+}
+
+.checkout__placeOrder > a {
+  line-height: 22px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000000;
+}
+
+.checkout__tableRow {
+  display: flex;
+  margin: 5px 0;
+}
+
+.checkout__tableCol1 {
+  flex: 1;
+}
+
+.checkout__tableCol2 {
+}
+
 @media only screen and (min-width: 768px) {
   .checkout__summaryBox {
     max-width: 350px;
+    /* background-color: grey; */
   }
   .checkout__main {
     height: 100%;
@@ -60,7 +123,9 @@
 
 @media only screen and (min-width: 992px) {
   .checkout__summaryBox {
-    /* max-width: 350px; */
+    max-width: 350px;
+    margin-right: 10px;
+    /* background-color: blue; */
   }
   .checkout__main {
     height: 100%;
@@ -70,6 +135,8 @@
 @media only screen and (min-width: 1200px) {
   .checkout__summaryBox {
     max-width: 350px;
+    /* background-color: green; */
+    /* margin-right:0px; */
   }
   .checkout__main {
     height: 100%;
@@ -78,7 +145,18 @@
 
 @media only screen and (min-width: 600px) {
   .checkout__summaryBox {
+    /* margin-right: 0px; */
+    /* background-color: red; */
   }
   .checkout__main {
   }
 }
+
+/* @media only screen and (min-width: 300px) {
+  .checkout__summaryBox {
+    margin-right: 0px;
+    background-color: pink;
+  }
+  .checkout__main {
+  }
+} */
