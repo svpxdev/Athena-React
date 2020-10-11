@@ -1,3 +1,6 @@
+.checkout__main {
+  min-height: 100vh;
+}
 .checkout__summary {
   display: flex;
   flex-wrap: wrap;
@@ -30,8 +33,9 @@
 }
 
 .checkout__items {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
+  height: 100%;
   margin: auto;
   justify-content: center;
   max-width: 1160px;
@@ -116,9 +120,6 @@
     max-width: 350px;
     /* background-color: grey; */
   }
-  .checkout__main {
-    height: 100%;
-  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -126,9 +127,6 @@
     max-width: 350px;
     margin-right: 10px;
     /* background-color: blue; */
-  }
-  .checkout__main {
-    height: 100%;
   }
 }
 
@@ -138,17 +136,12 @@
     /* background-color: green; */
     /* margin-right:0px; */
   }
-  .checkout__main {
-    height: 100%;
-  }
 }
 
 @media only screen and (min-width: 600px) {
   .checkout__summaryBox {
     /* margin-right: 0px; */
     /* background-color: red; */
-  }
-  .checkout__main {
   }
 }
 

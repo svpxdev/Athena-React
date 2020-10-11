@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import Footer from "./components/Footer";
 import Login from "./components/Login";
 import Checkout from "./components/Checkout";
+import Orders from "./components/Order";
 
 function App() {
   return (
@@ -18,12 +19,12 @@ function App() {
           <Route path="/checkout">
             <Header />
             <Checkout />
-            {/* <Footer /> */}
+            <Footer />
           </Route>
           <Route path="/orders">
-            <div className="App">
-              <h1>This is Login</h1>
-            </div>
+            <Header />
+            <Orders />
+            <Footer />
           </Route>
           <Route path="/">
             <Header />

@@ -1,9 +1,3 @@
-body {
-  min-height: 100% !important;
-  height: 100vh;
-  margin: 0px;
-}
-
 .home__heroSection {
   background-image: url("https://images.pexels.com/photos/4256852/pexels-photo-4256852.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"),
     linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));

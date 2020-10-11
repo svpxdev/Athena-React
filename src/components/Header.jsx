@@ -33,11 +33,12 @@ function Header() {
             <span className="header__optionsLineTwo">Sign In </span>
           </div>
         </Link>
-
-        <div className="header__optionsElements">
-          <span className="header__optionsLineOne">View, </span>
-          <span className="header__optionsLineTwo">Orders </span>
-        </div>
+        <Link to="/orders">
+          <div className="header__optionsElements">
+            <span className="header__optionsLineOne">View, </span>
+            <span className="header__optionsLineTwo">Orders </span>
+          </div>
+        </Link>
         <Link to="/checkout">
           <div className="header__basket">
             <ShoppingCartIcon className="header__basketOption" />
